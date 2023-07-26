@@ -1,8 +1,8 @@
 * {
-    border: 1px solid red;
     padding: 0px;
     margin: 0px;
     color: white;
+    font-family: 'VT323', monospace;
 }
 
 body {
@@ -14,9 +14,7 @@ body {
 
 .container {
     display: flex;
-    background-color: black;
-    flex-direction: column;
-    
+    flex-direction: column; 
 }
 
 .header {
@@ -26,8 +24,10 @@ body {
 }
 
 .header h1 {
+    font-size: 60px;
     align-self: center;
     color: white;
+    
 }
 
 .container-2 {
@@ -42,10 +42,13 @@ body {
 }
 
 .results h2 {
+    width: auto;
+    font-size: 45px;
     align-self: center;
 }
 
 .results p {
+    font-size: 36px;
     align-self: center;
 }
 
@@ -56,31 +59,50 @@ body {
 }
 
 .scores img {
-    border-radius: 10%;
-    border: 4px solid black;
+    border-radius: 90%;
+    border: 3px solid rgb(89, 91, 92);
+    background-color: rgb(0, 0, 0);
 }
 
 .container-2 .scores-text {
     display: flex;
     align-self: center;
     gap: 250px;
-    font-size: 30px;
+    font-size: 36px;
 }
 
 .container-2 .selection {
     display: flex;
     align-self: center;
-    justify-content: space-between;
+    gap: 35px;
     width: 500px;
 }
 
 .selection button {
-    width: 100px;
-    height: 75px;
+    width: 200px;
+    height: 150px;
+    border-radius: 10%;
+    border: 3px solid black;
+}
+
+#button1 {
+    width: 200px;
+    height: 150px;
+    background-image: url('images/Rock.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100px;
 }
 
 
 .container-2 .copyright {
     display: flex;
     align-self: center;
+}
+
+.copyright {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    margin-top: 18%;
 }
