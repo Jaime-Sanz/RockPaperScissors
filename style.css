@@ -27,7 +27,7 @@ body {
     font-size: 60px;
     align-self: center;
     color: white;
-    
+    margin-bottom: 20px;
 }
 
 .container-2 {
@@ -45,11 +45,13 @@ body {
     width: auto;
     font-size: 45px;
     align-self: center;
+    margin-top: 10px;
 }
 
 .results p {
     font-size: 36px;
     align-self: center;
+    margin-bottom: 20px;
 }
 
 .container-2 .scores {
@@ -71,11 +73,33 @@ body {
     font-size: 36px;
 }
 
+.selection-text {
+    display: flex;
+    gap: 115px;
+    justify-content: space-evenly;
+    align-self: center;
+    font-size: 24px;
+    margin: 5px;
+}
+
+#rocktext {
+    margin-right: 20px;
+}
+
+#papertext {
+    margin-left: 15px;
+}
+
+#scissortext {
+    margin-left: 15px;
+}
+
 .container-2 .selection {
     display: flex;
     align-self: center;
     gap: 35px;
     width: 500px;
+    margin-top: 20px;
 }
 
 .selection button {
@@ -94,6 +118,24 @@ body {
     background-size: 100px;
 }
 
+#button2 {
+    width: 200px;
+    height: 150px;
+    background-image: url('images/Paper.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 100px;
+}
+
+#button3 {
+    width: 200px;
+    height: 150px;
+    background-image: url('images/Scissors.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 110px;
+}
+
 
 .container-2 .copyright {
     display: flex;
@@ -104,5 +146,6 @@ body {
     font-size: 24px;
     display: flex;
     justify-content: center;
-    margin-top: 18%;
+    margin-top: 15%;
+    margin-bottom: 25px;
 }
