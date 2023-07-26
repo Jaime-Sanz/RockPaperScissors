@@ -1,4 +1,41 @@
 *{
     padding: 0px;
     margin: 0px;
+    border: 1px solid red;
+}
+
+.container {
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    align-self: center;
+    height: 75px;
+}
+
+.header h1 {
+    align-self: center;
+    color: white;
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-2 .results {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+}
+
+.results h2 {
+    align-self: center;
+}
+
+.results p {
+    align-self: center;
 }
