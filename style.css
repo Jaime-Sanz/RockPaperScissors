@@ -2,6 +2,14 @@
     border: 1px solid red;
     padding: 0px;
     margin: 0px;
+    color: white;
+}
+
+body {
+    overscroll-behavior: none;
+    height: 100%;
+    background-image: url('images/bgpixel.gif');
+    background-size: cover;
 }
 
 .container {
