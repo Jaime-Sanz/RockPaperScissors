@@ -14,20 +14,54 @@ body {
 
 .container {
     display: flex;
-    flex-direction: column; 
+    justify-content: center;
+    flex-direction: column;
 }
 
 .header {
     display: flex;
+    justify-content: center;
     align-self: center;
     height: 75px;
+    width: 100%;
 }
 
 .header h1 {
     font-size: 60px;
-    align-self: center;
     color: white;
     margin-bottom: 20px;
+}
+
+.header #audio {
+    width: 40px;
+    height: 40px;
+    background-image: url('images/speaker.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 20px;
+    border-radius: 80%;
+    align-self: flex-end;
+    margin: 5px;
+}
+
+#audio:hover {
+    background-color: rgb(145, 149, 151);
+}
+
+.header #readme {
+    width: 40px;
+    height: 40px;
+    background-image: url('images/customer.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 20px;
+    border-radius: 80%;
+    align-self: flex-end;
+    margin: 5px;
+}
+
+#readme:hover {
+    background-color: rgb(145, 149, 151);
 }
 
 .container-2 {
@@ -116,6 +150,11 @@ body {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 100px;
+    background-color: rgb(246, 21, 239);
+}
+
+#button1:hover {
+    background-color: aliceblue;
 }
 
 #button2 {
@@ -125,6 +164,11 @@ body {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 100px;
+    background-color: rgb(97, 62, 195);
+}
+
+#button2:hover {
+    background-color: aliceblue;
 }
 
 #button3 {
@@ -134,6 +178,11 @@ body {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 110px;
+    background-color: rgb(71, 120, 205);
+}
+
+#button3:hover {
+    background-color: aliceblue;
 }
 
 
