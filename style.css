@@ -35,7 +35,7 @@ body {
 .header #audio {
     width: 40px;
     height: 40px;
-    background-image: url('images/speaker.png');
+    background-image: url('images/mute.png');
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 20px;

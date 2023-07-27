@@ -1,10 +1,9 @@
-
 function audioVolume(){
     document.getElementById("audio");
     document.getElementById("song");
      
-    song.muted = !song.muted;
+    (song.paused) ? song.play() : song.pause();
 
-    (song.muted) ? audio.style.backgroundImage = "url('images/mute.png')" : 
+    (song.paused) ? audio.style.backgroundImage = "url('images/mute.png')": 
         audio.style.backgroundImage = "url('images/speaker.png')";
 }
