@@ -64,6 +64,22 @@ body {
     background-color: rgb(145, 149, 151);
 }
 
+.header #reset {
+    width: 40px;
+    height: 40px;
+    background-image: url('images/undo.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 20px;
+    border-radius: 80%;
+    align-self: flex-end;
+    margin: 5px;
+}
+
+#reset:hover {
+    background-color: rgb(145, 149, 151);
+}
+
 .container-2 {
     display: flex;
     flex-direction: column;
@@ -103,7 +119,7 @@ body {
 .container-2 .scores-text {
     display: flex;
     align-self: center;
-    gap: 250px;
+    justify-content: space-around;
     font-size: 36px;
 }
 
