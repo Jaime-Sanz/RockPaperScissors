@@ -16,7 +16,7 @@
         <div class="header">
             <h1>Rock Paper Scissors</h1>
             <button id="audio" onclick="audioVolume()"></button>
-            <button id="readme"></button>
+            <button id="readme" onclick="gitRead()"></button>
         </div>
     </div>
         <div class="container-2">
@@ -25,8 +25,8 @@
                 <p>Rock loses to paper!</p>
             </div>
             <div class="scores">
-                <img src="images/Question Mark.png" alt="?" width="150px" height="auto">
-                <img src="images/Question Mark.png" alt="?" width="150px" height="auto">
+                <img id="playerQ" src="images/Question Mark.png" alt="?" width="150px" height="auto">
+                <img id="enemyQ" src="images/Question Mark.png" alt="?" width="150px" height="auto">
             </div>
             <div class="scores-text">
                 <p>Player: 0</p>
@@ -34,12 +34,9 @@
             </div>
 
             <div class="selection">
-                <button id="button1">
-                </button>
-                <button id="button2">
-                </button>
-                <button id="button3">
-                </button>
+                <button id="button1" onclick="gameSelection()"></button>
+                <button id="button2" onclick="gameSelection()"></button>
+                <button id="button3" onclick="gameSelection()"></button>
             </div>
             <div class="selection-text">
                 <p id="rocktext">Rock</p>
