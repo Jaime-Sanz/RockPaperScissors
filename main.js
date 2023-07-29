@@ -1,16 +1,43 @@
+/* Audio Button */
 function audioVolume(){
     document.getElementById("audio");
     document.getElementById("song");
      
+    buttonSound.play();
     (song.paused) ? song.play() : song.pause();
 
     (song.paused) ? audio.style.backgroundImage = "url('images/mute.png')": 
         audio.style.backgroundImage = "url('images/speaker.png')";
 }
 
+/* Github Button */
+
 const gitRead = () => {
     window.open("https://github.com/Jaime-Sanz/RockPaperScissors/tree/main")
 }
+
+/* Reset Button */
+
+const resetGame = () => {
+    let playerScore = document.getElementById("playerScore").innerHTML;
+    let enemyScore = document.getElementById("enemyScore").innerHTML;
+    let result = document.getElementById("resultsText");
+    let playerCard = document.getElementById("playerQ");
+    let enemyCard = document.getElementById("enemyQ");
+
+
+    playerScore = 0;
+    enemyScore = 0;
+
+    document.getElementById("playerScore").innerHTML = playerScore;
+    document.getElementById("enemyScore").innerHTML = enemyScore;
+    result.innerText = "Start The Game!"
+    playerCard.src = "images/Question Mark.png";
+    enemyCard.src = "images/Question Mark.png";
+}
+
+/* Game Logic 
+   User Selection */
 
 const userChoice = (selection) => {
     let playerCard = document.getElementById("playerQ");
@@ -39,6 +66,9 @@ const userChoice = (selection) => {
         gameSelection(selection)
     }
 }
+
+/* Game Logic 
+   Enemy Selection */
 
 function gameSelection(playerValue){
     let computerSelection = Math.floor(Math.random() * 10);

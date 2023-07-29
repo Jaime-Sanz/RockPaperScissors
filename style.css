@@ -6,6 +6,7 @@
 }
 
 body {
+    overflow: hidden;
     overscroll-behavior: none;
     height: 100vh;
     background-image: url('images/bgpixel.gif');
@@ -21,63 +22,15 @@ body {
 .header {
     display: flex;
     justify-content: center;
-    align-self: center;
     height: 75px;
     width: 100%;
 }
 
 .header h1 {
+    align-self: center;
     font-size: 60px;
     color: white;
-    margin-bottom: 20px;
-}
-
-.header #audio {
-    width: 40px;
-    height: 40px;
-    background-image: url('images/mute.png');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 20px;
-    border-radius: 80%;
-    align-self: flex-end;
-    margin: 5px;
-}
-
-#audio:hover {
-    background-color: rgb(145, 149, 151);
-}
-
-.header #readme {
-    width: 40px;
-    height: 40px;
-    background-image: url('images/customer.png');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 20px;
-    border-radius: 80%;
-    align-self: flex-end;
-    margin: 5px;
-}
-
-#readme:hover {
-    background-color: rgb(145, 149, 151);
-}
-
-.header #reset {
-    width: 40px;
-    height: 40px;
-    background-image: url('images/undo.png');
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 20px;
-    border-radius: 80%;
-    align-self: flex-end;
-    margin: 5px;
-}
-
-#reset:hover {
-    background-color: rgb(145, 149, 151);
+    margin-bottom: 10px;
 }
 
 .container-2 {
@@ -95,7 +48,8 @@ body {
     width: auto;
     font-size: 45px;
     align-self: center;
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .results p {
@@ -119,8 +73,16 @@ body {
 .container-2 .scores-text {
     display: flex;
     align-self: center;
-    justify-content: space-around;
     font-size: 36px;
+    gap: 20px;
+}
+
+.scores-text #playerScore {
+    margin-right: 100px;
+}
+
+.scores-text #enemyText {
+    margin-left: 110px;
 }
 
 .selection-text {
@@ -133,7 +95,7 @@ body {
 }
 
 #rocktext {
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
 #papertext {
@@ -201,10 +163,57 @@ body {
     background-color: aliceblue;
 }
 
-
-.container-2 .copyright {
+.container-3 {
     display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+    
+}
+
+.container-3 #audio {
+    width: 40px;
+    height: 40px;
+    background-image: url('images/mute.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 20px;
+    border-radius: 80%;
     align-self: center;
+}
+
+#audio:hover {
+    background-color: rgb(145, 149, 151);
+}
+
+.container-3 #readme {
+    width: 40px;
+    height: 40px;
+    background-image: url('images/customer.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 20px;
+    border-radius: 80%;
+    align-self: center;
+}
+
+#readme:hover {
+    background-color: rgb(145, 149, 151);
+}
+
+.container-3 #reset {
+    width: 40px;
+    height: 40px;
+    background-image: url('images/undo.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 20px;
+    border-radius: 80%;
+    align-self: center;
+}
+
+#reset:hover {
+    background-color: rgb(145, 149, 151);
 }
 
 .copyright {
@@ -212,5 +221,4 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 13%;
-    margin-bottom: 25px;
 }

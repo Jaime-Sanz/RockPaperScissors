@@ -15,9 +15,6 @@
     <div class="container">
         <div class="header">
             <h1>Rock Paper Scissors</h1>
-            <button id="audio" onclick="audioVolume()"></button>
-            <button id="readme" onclick="gitRead()"></button>
-            <button id="reset" onclick="resetGame()"></button>
         </div>
     </div>
         <div class="container-2">
@@ -29,9 +26,9 @@
                 <img id="enemyQ" src="images/Question Mark.png" alt="?" width="150px" height="150px">
             </div>
             <div class="scores-text">
-                <p>Player: </p>
+                <p id="playerText">Player: </p>
                 <p id="playerScore" value="0">0</p>
-                <p>Enemy: </p>
+                <p id="enemyText">Enemy: </p>
                 <p id="enemyScore" value="0">0</p>
             </div>
 
@@ -46,6 +43,11 @@
                 <p id="scissortext">Scissor</p>
             </div>
         </div>
+        <div class="container-3">
+            <button id="audio" onclick="audioVolume()"></button>
+            <button id="readme" onclick="gitRead()"></button>
+            <button id="reset" onclick="resetGame()"></button>
+        </div> 
         <div class="copyright">
             <h3>Copyright © 2023 JSanchez</h3>
         </div>
