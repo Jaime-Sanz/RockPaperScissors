@@ -3,7 +3,6 @@ function audioVolume(){
     document.getElementById("audio");
     document.getElementById("song");
      
-    buttonSound.play();
     (song.paused) ? song.play() : song.pause();
 
     (song.paused) ? audio.style.backgroundImage = "url('images/mute.png')": 
